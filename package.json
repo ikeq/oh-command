@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A nodejs commmands wrapper for convenience.",
   "main": "lib/index.js",
+  "bin": {
+    "oc": "./bin/oc"
+  },
   "scripts": {},
   "repository": {
     "type": "git",
