@@ -5,12 +5,32 @@
       "name": "build",
       "aliases": [
         "b"
-      ]
+      ],
+      "options": [
+        {
+          "name": "module",
+          "type": "String",
+          "description": "Specifies module to build."
+        },
+        {
+          "name": "all",
+          "type": "Boolean",
+          "description": "Build all modules."
+        }
+      ],
+      "description": "Builds source code and places it into the output path."
     },
     {
       "name": "serve",
       "aliases": [
         "s"
+      ],
+      "options": [
+        {
+          "name": "module",
+          "type": "String",
+          "description": "Specifies module to build."
+        }
       ]
     }
   ],
