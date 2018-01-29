@@ -1,0 +1,21 @@
+{
+  "name": "oh-command",
+  "version": "0.1.0",
+  "description": "A nodejs commmands wrapper for convenience.",
+  "main": "lib/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmorec/oh-command.git"
+  },
+  "keywords": [
+    "command",
+    "nodejs"
+  ],
+  "author": "Elmore Cheng <elmore.c@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmorec/oh-command/issues"
+  },
+  "homepage": "https://github.com/elmorec/oh-command#readme"
+}
