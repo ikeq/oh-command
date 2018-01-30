@@ -19,10 +19,10 @@ consider making it more elegant.
 ### install
 
 ```bash
-npm i title -g
+npm i oh-command -g
 ```
 
-### add `.oh-command.json` config file
+### adding `.oh-command.json` config file
 
 ```javascript
 {
@@ -30,11 +30,19 @@ npm i title -g
   "commands": [
     {
       "name": "build",
-      "aliases": ["b"]
+      "aliases": [ "b" ],
+      "options": [
+        { "name": "module", "type": "String", "description": "Specifies module to build." },
+        { "name": "all", "type": "Boolean", "description": "Build all modules." }
+      ],
+      "description": "Builds source code and places it into the output path."
     },
     {
       "name": "serve",
-      "aliases": ["s"]
+      "aliases": [ "s" ],
+      "options": [
+        { "name": "module", "type": "String" }
+      ]
     }
   ],
   "entry": "index.js"
