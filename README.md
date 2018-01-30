@@ -22,7 +22,7 @@ consider making it more elegant.
 npm i title -g
 ```
 
-### adding `.pacman.json` config file
+### add `.oh-command.json` config file
 
 ```javascript
 {
