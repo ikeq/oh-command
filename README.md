@@ -32,7 +32,8 @@ npm i oh-command -g
       "name": "build",
       "aliases": [ "b" ],
       "options": [
-        { "name": "module", "type": "String", "description": "Specifies module to build." },
+        { "name": "module", "type": "String", "short": true, "description": "Specifies module to build." },
+        { "name": "prod", "type": "boolean", "description": "Production build."}
         { "name": "all", "type": "Boolean", "description": "Build all modules." }
       ],
       "description": "Builds source code and places it into the output path."
@@ -41,7 +42,7 @@ npm i oh-command -g
       "name": "serve",
       "aliases": [ "s" ],
       "options": [
-        { "name": "module", "type": "String" }
+        { "name": "module", "type": "String", "short": true }
       ]
     }
   ],
@@ -52,7 +53,7 @@ npm i oh-command -g
 Now you can use command as follows.
 
 ```bash
-oc build --module=myapp
+oc build myapp --prod
 oc serve --module=myapp
 ```
 
@@ -60,14 +61,14 @@ The `entry` must be a function and the command and arguments will be passed in, 
 
 ```bash
 # command
-oc build --module=myapp
+oc build --module=myapp --prod
 ```
 
 ```javascript
 // entry
 module.exports = function(command, commandArgs) {
   console.log(command); // build
-  console.log(commandArgs); // { module: "myapp" }
+  console.log(commandArgs); // { module: "myapp", prod: true }
 }
 ```
 

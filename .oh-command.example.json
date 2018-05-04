@@ -17,6 +17,11 @@
           "name": "all",
           "type": "Boolean",
           "description": "Build all modules."
+        },
+        {
+          "name": "prod",
+          "type": "boolean",
+          "description": "Production build."
         }
       ],
       "description": "Builds source code and places it into the output path."
@@ -31,7 +36,6 @@
           "name": "module",
           "type": "String",
           "required": true,
-          "short": true,
           "description": "Specifies module to build."
         }
       ]
